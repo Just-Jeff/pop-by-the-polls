@@ -5,13 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop by the Polls</title>
     <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- nav element goes here -->
-
+<nav>
+  <a href="./index.html"><img id="logo" src="./images/logo.jpg" alt="Logo"></a>
+  <img id="hamburger" src="./icons/menu.svg" alt="Menu" />
+  <div id="overlay"></div>
+  <ul id="menu">
+    <li><a href="#issues">Issues</a></li>
+    <li><a href="#candidate">Candidates</a></li>
+    <li><a href="#polling-place">Polling Place</a></li>
+    <li><a href="#sample-ballot">Sample Ballot</a></li>
+  </ul>
+</nav>
     <!-- main element goes here -->
+    <main>
+      <article>
+        <!-- header of article goes here -->
+        <header class="grid-1-2">
+          <section>
+            <h1>Pop by the Polls</h1>
+            <p>
+              This is a short research article for the 2020 general election. It cover four issues currently being discussed, a candidate running for President of the United States, a polling place, and a sample ballot.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/2020_United_States_presidential_election" title="Read About the Issues">Read More</a>
+          </section>
+          <figure>
+            <img src="./images/north-carolina.svg" alt="North Carolina">
+          </figure>
+        </header>
+        <!-- issues section -->
+        <section id="issues">
+          <header>
+            <h2>Issues</h2>
+            <p>These are the issues that voters and candidates are discussing this general election.
+            </p>
+          </header>
+          <section class="grid-1-4">
+            <!-- first issue -->
+            <article class="card">
+                <figure><img src="./images/ClimateChange.jpeg" alt="Climate Change" /></figure>
+              <section>
+                <h3>Climate Change</h3>
+                <p>Global Warming and it's effects on the planet.</p>
+              </section>
+            </article>
+            <!-- second issue -->
+            <article class="card">
+                <figure><img src="./images/PlannedParenthood.jpg" alt="Planned Parenthood" /></figure>
+              <section>
+                <h3>Abortion</h3>
+                <p>Funding for Planned Parenthood and abortion clinics.</p>
+              </section>
+            </article>
+            <!-- third issue -->
+            <article class="card">
+                <figure><img src="./images/PoliceReform.jpeg" alt="Police Reform" /></figure>
+              <section>
+                <h3>Police Reform</h3>
+                <p>Reallocating police budgets and addressing police brutality.</p>
+              </section>
+            </article>
+            <!-- fourth issue -->
+            <article class="card">
+                <figure><img src="./images/Covid-red.jpg" alt="Covid-19" /></figure>
+              <section>
+                <h3>COVID-19</h3>
+                <p>How to curb the rapid spread of the Coronavirus.</p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!-- candidate section -->
+        <section id="candidate">
+          <header>
+            <h2>Candidate</h2>
+            <p>This is a candidate that is running to be nominated as President of the United States.
+            </p>
+          </header>
+          <section>
+            <!-- candidate card -->
+            <article class="card grid-1-2">
+              <figure><img src="./images/Biden.webp" alt="Joe Biden" /></figure>
+              <section>
+                <h3>Joe Biden</h3>
+                <p>Former Delaware Senator, Joe Biden, was elected as the 47th U.S. vice president with his running mate, President Barack Obama, in 2008 and re-elected in 2012. Joe Biden briefly worked as an attorney before turning to politics. He became the fifth-youngest U.S. senator in history as well as Delaware's longest-serving senator. He is now the 2020 Democratic presidential nominee.</p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!-- polling place section -->
+        <section id="polling-place">
+          <header>
+            <h2>This is a location that voters can visit to vote at in Durham, NC.
+            </h2>
+            <p>Here voter's can cast a ballot for the candidates they prefer and make sure that their voice is heard by politicians.</p>
+          </header>
+          <section>
+            <!-- polling place card -->
+            <article class="card grid-1-2">
+              <figure><img src="./images/Durham-Library.jpg" alt="Durham South Regional Library" /></figure>
+              <section>
+                <h3>Durham South Regional Library</h3>
+                <p>Located at; 4505 South Alston Avenue, Durham, NC 27713.</p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!-- sample ballot section -->
+        <section id="sample-ballot">
+          <header>
+            <h2>Sample Ballot</h2>
+            <p>This is a sample ballot that potential voters can use to practice voting and to preview which candidates are up for the general election.
+            </p>
+          </header>
+          <section>
+            <!-- sample ballot card -->
+            <article class="card grid-1-2">
+              <figure><img src="./images/JakeSampleBallot.jpg" alt="Sample Ballot" /></figure>
+              <section>
+                <h3>Jake Jeffries Sample Ballot</h3>
+                <p>Here's an exmaple of what my sample ballot would look like.</p>
+              </section>
+            </article>
+          </section>
+        </section>
+      </article>
+    </main>
+
 
     <!-- footer element goes here -->
+    <footer>
+      <p>This website was made by
+        <a href="/">Jake Jeffries</a>
+        in
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu">The University of North Carolina at Chapel Hill</a>.
+      </p>
+    </footer>
   </body>
 </html>
